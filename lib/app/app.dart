@@ -6,16 +6,16 @@ import '../features/shell/main_shell.dart';
 import 'routes.dart';
 import 'theme/app_theme.dart';
 
-class CidadeInvisivelApp extends StatefulWidget {
+class VisibleApp extends StatefulWidget {
   /// Estado injetável para testes.
   final AppState? state;
-  const CidadeInvisivelApp({super.key, this.state});
+  const VisibleApp({super.key, this.state});
 
   @override
-  State<CidadeInvisivelApp> createState() => _CidadeInvisivelAppState();
+  State<VisibleApp> createState() => _VisibleAppState();
 }
 
-class _CidadeInvisivelAppState extends State<CidadeInvisivelApp> {
+class _VisibleAppState extends State<VisibleApp> {
   late final AppState _state = widget.state ?? AppState();
   late final Future<void> _loading = widget.state != null
       ? Future.value()
@@ -26,7 +26,7 @@ class _CidadeInvisivelAppState extends State<CidadeInvisivelApp> {
     return AppScope(
       state: _state,
       child: MaterialApp(
-        title: 'Cidade Invisível',
+        title: 'Visible',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.light,
         darkTheme: AppTheme.dark,

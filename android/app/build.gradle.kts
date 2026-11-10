@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "br.com.cidadeinvisivel.cidade_invisivel"
+    namespace = "br.com.visible.app"
     compileSdk = 37
     ndkVersion = flutter.ndkVersion
 
@@ -17,7 +17,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "br.com.cidadeinvisivel.cidade_invisivel"
+        applicationId = "br.com.visible.app"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

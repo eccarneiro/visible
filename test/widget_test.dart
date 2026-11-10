@@ -1,5 +1,5 @@
-import 'package:cidade_invisivel/app/app.dart';
-import 'package:cidade_invisivel/core/services/app_state.dart';
+import 'package:visible/app/app.dart';
+import 'package:visible/core/services/app_state.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -9,10 +9,10 @@ void main() {
   testWidgets('Primeiro acesso mostra o onboarding e permite escolher perfil',
       (tester) async {
     final state = AppState();
-    await tester.pumpWidget(CidadeInvisivelApp(state: state));
+    await tester.pumpWidget(VisibleApp(state: state));
     await tester.pumpAndSettle();
 
-    expect(find.text('Cidade Invisível'), findsOneWidget);
+    expect(find.text('Visible'), findsOneWidget);
     expect(find.text('Continuar'), findsOneWidget);
 
     await tester.tap(find.text('Continuar'));

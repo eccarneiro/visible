@@ -9,8 +9,8 @@ class NotificationService {
   static final FlutterLocalNotificationsPlugin _plugin =
       FlutterLocalNotificationsPlugin();
 
-  static const _channelId = 'cidade_invisivel_ch';
-  static const _channelName = 'Cidade Invisível';
+  static const _channelId = 'visible_alerts';
+  static const _channelName = 'Visible';
 
   static Future<void> init() async {
     if (kIsWeb) return;

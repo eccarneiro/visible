@@ -132,7 +132,7 @@ class _MapPageState extends State<MapPage> {
                     urlTemplate:
                         'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
                     userAgentPackageName:
-                        'br.com.cidadeinvisivel.cidade_invisivel',
+                        'br.com.visible.app',
                   ),
                   MarkerLayer(markers: [
                     for (final i in visible) _issueMarker(i, profile),

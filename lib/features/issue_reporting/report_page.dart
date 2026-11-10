@@ -338,7 +338,7 @@ class _ReportPageState extends State<ReportPage> {
             children: [
               TileLayer(
                 urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-                userAgentPackageName: 'br.com.cidadeinvisivel.cidade_invisivel',
+                userAgentPackageName: 'br.com.visible.app',
               ),
               if (_point != null)
                 MarkerLayer(markers: [

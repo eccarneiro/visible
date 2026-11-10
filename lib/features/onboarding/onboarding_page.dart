@@ -118,7 +118,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
         const SizedBox(height: 24),
         Icon(Icons.location_city, size: 72, color: cs.primary),
         const SizedBox(height: 16),
-        Text('Cidade Invisível',
+        Text('Visible',
             style: Theme.of(context)
                 .textTheme
                 .headlineLarge

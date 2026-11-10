@@ -1,4 +1,4 @@
-package br.com.cidadeinvisivel.cidade_invisivel
+package br.com.visible.app
 
 import io.flutter.embedding.android.FlutterActivity
 

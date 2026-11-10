@@ -1,9 +1,9 @@
-import 'package:cidade_invisivel/core/services/issue_repository.dart';
-import 'package:cidade_invisivel/core/utils/geo.dart';
-import 'package:cidade_invisivel/core/utils/relevance.dart';
-import 'package:cidade_invisivel/models/issue_category.dart';
-import 'package:cidade_invisivel/models/mobility_profile.dart';
-import 'package:cidade_invisivel/models/urban_issue.dart';
+import 'package:visible/core/services/issue_repository.dart';
+import 'package:visible/core/utils/geo.dart';
+import 'package:visible/core/utils/relevance.dart';
+import 'package:visible/models/issue_category.dart';
+import 'package:visible/models/mobility_profile.dart';
+import 'package:visible/models/urban_issue.dart';
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';

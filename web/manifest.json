@@ -1,11 +1,11 @@
 {
-    "name": "cidade_invisivel",
-    "short_name": "cidade_invisivel",
+    "name": "Visible",
+    "short_name": "Visible",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Mapa colaborativo de acessibilidade urbana.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

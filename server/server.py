@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Servidor local do Cidade Invisível: API (SQLite) + app web, no mesmo endereço.
+"""Servidor local do Visible: API (SQLite) + app web, no mesmo endereço.
 
 Uso:  python3 server/server.py [--port 8080] [--host 127.0.0.1] [--static build/web]
 Dados em server/data/ (cidade.db e photos/).
@@ -280,7 +280,7 @@ def main():
         c.executescript(SCHEMA)
     Handler.static_dir = os.path.abspath(a.static)
     srv = ThreadingHTTPServer((a.host, a.port), Handler)
-    print(f"Cidade Invisível em http://{a.host}:{a.port}  (estáticos: {Handler.static_dir})")
+    print(f"Visible em http://{a.host}:{a.port}  (estáticos: {Handler.static_dir})")
     srv.serve_forever()
 
 

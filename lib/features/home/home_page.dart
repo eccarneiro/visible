@@ -174,7 +174,7 @@ class _Header extends StatelessWidget {
               children: [
                 const Icon(Icons.location_city, color: Colors.white, size: 22),
                 const SizedBox(width: 8),
-                Text('Cidade Invisível',
+                Text('Visible',
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
                         color: Colors.white, fontWeight: FontWeight.w700)),
               ],
