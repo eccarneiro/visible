@@ -331,6 +331,11 @@ Os testes cobrem:
 Projeto desenvolvido em grupo para a disciplina de Desenvolvimento Mobile,
 8º período.
 
-- **Integrantes:** _[nomes do grupo]_
+- **Integrantes:**
+  - Caique Moran de Souza
+  - Elton Dourado de Azevedo Filho
+  - Emanuel Corrêa Carneiro
+  - Felipe da Silva Pereira Alves
+  - Ygor Gomes Rocha
 - **Professor:** Renato
 - **Repositório original do grupo:** [fdasilvapa/cidade-invisivel](https://github.com/fdasilvapa/cidade-invisivel)
