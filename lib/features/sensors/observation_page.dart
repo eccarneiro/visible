@@ -170,7 +170,7 @@ class _ObservationPageState extends State<ObservationPage> {
     final text = Theme.of(context).textTheme;
     final current = _mags.isEmpty ? 0.0 : _mags.last;
     return Scaffold(
-      appBar: AppBar(title: const Text('Observar trajeto')),
+      appBar: AppBar(title: const Text('Observação de trajeto')),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [

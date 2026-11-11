@@ -109,7 +109,7 @@ class _SensorsPageState extends State<SensorsPage>
     await NotificationService.show(
       context,
       id: _notifId++,
-      title: '📳 Agitação detectada!',
+      title: 'Movimento brusco detectado',
       body: 'Movimento brusco registrado pelo acelerômetro.',
       channelDescription: 'Alertas de sensores',
     );
@@ -174,10 +174,10 @@ class _SensorsPageState extends State<SensorsPage>
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text('Detector de agitação',
-                                style: TextStyle(fontWeight: FontWeight.bold)),
+                                style: TextStyle(fontWeight: FontWeight.w600)),
                             Text(
                               _shakeCount == 0
-                                  ? 'Agite o celular para testar!'
+                                  ? 'Agite o celular para testar.'
                                   : 'Agitações detectadas: $_shakeCount',
                               style: TextStyle(
                                   color: _shakeCount > 0
@@ -202,7 +202,7 @@ class _SensorsPageState extends State<SensorsPage>
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text('Valores brutos (com gravidade)',
-                        style: TextStyle(fontWeight: FontWeight.bold)),
+                        style: TextStyle(fontWeight: FontWeight.w600)),
                     const SizedBox(height: 12),
                     _AxisRow('X', _x, Colors.red),
                     const SizedBox(height: 8),
@@ -228,7 +228,7 @@ class _SensorsPageState extends State<SensorsPage>
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text('Histórico de magnitude',
-                        style: TextStyle(fontWeight: FontWeight.bold)),
+                        style: TextStyle(fontWeight: FontWeight.w600)),
                     const SizedBox(height: 12),
                     SizedBox(
                       height: 150,
@@ -267,7 +267,7 @@ class _AxisRow extends StatelessWidget {
           width: 24,
           child: Text(axis,
               style: TextStyle(
-                  fontWeight: FontWeight.bold, color: color)),
+                  fontWeight: FontWeight.w600, color: color)),
         ),
         Expanded(
           child: LinearProgressIndicator(

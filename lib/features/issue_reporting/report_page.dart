@@ -156,7 +156,7 @@ class _ReportPageState extends State<ReportPage> {
     final messenger = ScaffoldMessenger.of(context);
     nav.pop();
     messenger.showSnackBar(SnackBar(
-      content: const Text('Problema registrado! Obrigado por contribuir.'),
+      content: const Text('Registro enviado. Obrigado pela contribuição.'),
       action: SnackBarAction(
           label: 'VER', onPressed: () => showIssueDetails(nav.context, issue.id)),
     ));
@@ -252,7 +252,7 @@ class _ReportPageState extends State<ReportPage> {
           aspectRatio: 4 / 3,
           child: Material(
             color: cs.surfaceContainerHighest,
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(12),
             clipBehavior: Clip.antiAlias,
             child: InkWell(
               onTap: _takePhoto,
@@ -394,7 +394,7 @@ class _ReportPageState extends State<ReportPage> {
               ChoiceChip(
                 avatar: Icon(c.icon,
                     size: 18,
-                    color: _category == c ? cs.onSecondaryContainer : c.color),
+                    color: c.color),
                 label: Text(c.label),
                 selected: _category == c,
                 onSelected: (_) => setState(() => _category = c),

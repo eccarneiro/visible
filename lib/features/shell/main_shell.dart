@@ -34,20 +34,20 @@ class _MainShellState extends State<MainShell> {
         destinations: const [
           NavigationDestination(
               icon: Icon(Icons.home_outlined),
-              selectedIcon: Icon(Icons.home_rounded),
+              selectedIcon: Icon(Icons.home),
               label: 'Início'),
           NavigationDestination(
               icon: Icon(Icons.map_outlined),
               selectedIcon: Icon(Icons.map),
               label: 'Mapa'),
           NavigationDestination(
-              icon: Icon(Icons.sensors_outlined),
-              selectedIcon: Icon(Icons.sensors),
-              label: 'Observar'),
+              icon: Icon(Icons.route_outlined),
+              selectedIcon: Icon(Icons.route),
+              label: 'Trajeto'),
           NavigationDestination(
-              icon: Icon(Icons.emoji_events_outlined),
-              selectedIcon: Icon(Icons.emoji_events),
-              label: 'Contribuições'),
+              icon: Icon(Icons.history),
+              selectedIcon: Icon(Icons.history),
+              label: 'Histórico'),
           NavigationDestination(
               icon: Icon(Icons.person_outline),
               selectedIcon: Icon(Icons.person),

@@ -24,22 +24,22 @@ class ProfilePicker extends StatelessWidget {
               label: '${p.label}. ${p.priorities}',
               child: Material(
                 color: p == selected
-                    ? cs.primaryContainer
-                    : cs.surfaceContainerLow,
+                    ? cs.primary.withValues(alpha: .06)
+                    : cs.surface,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(12),
                   side: BorderSide(
                       color: p == selected ? cs.primary : cs.outlineVariant,
-                      width: p == selected ? 2 : 1),
+                      width: p == selected ? 1.5 : 1),
                 ),
                 child: InkWell(
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(12),
                   onTap: () => onChanged(p),
                   child: Padding(
                     padding: const EdgeInsets.all(14),
                     child: Row(
                       children: [
-                        Icon(p.icon, size: 30, color: cs.primary),
+                        Icon(p.icon, size: 26, color: cs.primary),
                         const SizedBox(width: 14),
                         Expanded(
                           child: Column(

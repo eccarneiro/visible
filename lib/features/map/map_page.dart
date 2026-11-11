@@ -250,11 +250,11 @@ class _MapPageState extends State<MapPage> {
               children: [
                 Expanded(
                   child: Material(
-                    elevation: 3,
-                    borderRadius: BorderRadius.circular(28),
+                    elevation: 1,
+                    borderRadius: BorderRadius.circular(12),
                     color: cs.surface,
                     child: InkWell(
-                      borderRadius: BorderRadius.circular(28),
+                      borderRadius: BorderRadius.circular(12),
                       onTap: () => showProfileSheet(context),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
@@ -264,7 +264,7 @@ class _MapPageState extends State<MapPage> {
                             Icon(app.profile.icon, color: cs.primary),
                             const SizedBox(width: 10),
                             Expanded(
-                              child: Text('Visão: ${app.profile.label}',
+                              child: Text('Perfil: ${app.profile.label}',
                                   style: const TextStyle(
                                       fontWeight: FontWeight.w600),
                                   overflow: TextOverflow.ellipsis),

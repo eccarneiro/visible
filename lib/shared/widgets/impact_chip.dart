@@ -12,9 +12,8 @@ class ImpactChip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(
-        color: level.color.withValues(alpha: 0.14),
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: level.color.withValues(alpha: 0.5)),
+        color: level.color.withValues(alpha: 0.10),
+        borderRadius: BorderRadius.circular(6),
       ),
       child: Text(
         '${prefix ?? ''}${level.label}',

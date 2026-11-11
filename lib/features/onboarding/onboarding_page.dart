@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../core/services/app_state.dart';
 import '../../models/mobility_profile.dart';
+import '../../shared/widgets/brand_mark.dart';
 import '../../shared/widgets/profile_picker.dart';
 
 class OnboardingPage extends StatefulWidget {
@@ -94,9 +95,15 @@ class _OnboardingPageState extends State<OnboardingPage> {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CircleAvatar(
-                  backgroundColor: cs.primaryContainer,
-                  child: Icon(i, color: cs.onPrimaryContainer)),
+              Container(
+                width: 40,
+                height: 40,
+                decoration: BoxDecoration(
+                  color: cs.primary.withValues(alpha: .08),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Icon(i, color: cs.primary, size: 22),
+              ),
               const SizedBox(width: 14),
               Expanded(
                 child: Column(
@@ -105,7 +112,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     Text(t,
                         style: const TextStyle(
                             fontWeight: FontWeight.w600, fontSize: 16)),
-                    Text(s),
+                    const SizedBox(height: 2),
+                    Text(s, style: TextStyle(color: cs.onSurfaceVariant)),
                   ],
                 ),
               ),
@@ -115,25 +123,30 @@ class _OnboardingPageState extends State<OnboardingPage> {
     return ListView(
       padding: const EdgeInsets.all(24),
       children: [
+        const SizedBox(height: 32),
+        const Align(
+            alignment: Alignment.centerLeft, child: BrandMark(size: 44)),
         const SizedBox(height: 24),
-        Icon(Icons.location_city, size: 72, color: cs.primary),
-        const SizedBox(height: 16),
-        Text('Visible',
+        Text('Acessibilidade urbana mapeada pela comunidade.',
             style: Theme.of(context)
                 .textTheme
-                .headlineLarge
-                ?.copyWith(fontWeight: FontWeight.bold)),
+                .headlineSmall
+                ?.copyWith(fontWeight: FontWeight.w600, height: 1.25)),
         const SizedBox(height: 8),
-        Text('A cidade que você não vê, nós ajudamos a enxergar.',
-            style: Theme.of(context).textTheme.titleMedium),
-        const SizedBox(height: 32),
-        point(Icons.camera_alt, 'Registre',
-            'Fotografe buracos, rampas quebradas e obstáculos.'),
-        point(Icons.map, 'Veja no mapa',
+        Text(
+            'Registre barreiras nas calçadas e consulte o que afeta o seu deslocamento.',
+            style: Theme.of(context)
+                .textTheme
+                .bodyLarge
+                ?.copyWith(color: cs.onSurfaceVariant)),
+        const SizedBox(height: 36),
+        point(Icons.photo_camera_outlined, 'Registre',
+            'Fotografe buracos, rampas danificadas e obstáculos.'),
+        point(Icons.map_outlined, 'Consulte o mapa',
             'Problemas da sua região, de acordo com a sua forma de se deslocar.'),
-        point(Icons.groups, 'Confirme com a comunidade',
+        point(Icons.verified_outlined, 'Valide com a comunidade',
             'Mais pessoas confirmando deixam as informações mais confiáveis.'),
-        point(Icons.lock_outline, 'Você no controle',
+        point(Icons.lock_outline, 'Privacidade',
             'Localização e sensores só são usados quando você pedir.'),
       ],
     );
@@ -147,7 +160,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
             style: Theme.of(context)
                 .textTheme
                 .headlineSmall
-                ?.copyWith(fontWeight: FontWeight.bold)),
+                ?.copyWith(fontWeight: FontWeight.w600)),
         const SizedBox(height: 8),
         const Text(
             'Usamos isso para destacar os problemas mais importantes para você. '

@@ -63,7 +63,7 @@ class _IssueDetails extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 12),
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(12),
               child: SizedBox(
                 height: 200,
                 child: i.photoUrl != null
@@ -92,7 +92,7 @@ class _IssueDetails extends StatelessWidget {
                 children: [
                   Text(i.category.label,
                       style: text.titleLarge
-                          ?.copyWith(fontWeight: FontWeight.bold)),
+                          ?.copyWith(fontWeight: FontWeight.w600)),
                   Text('Registrado ${timeAgo(i.createdAt)}'
                       '${i.isDemo ? ' · exemplo' : ''}',
                       style: text.bodySmall),
@@ -177,7 +177,7 @@ class _IssueDetails extends StatelessWidget {
                 ? null
                 : () async {
                     await repo.confirmStillExists(i.id);
-                    toast('Obrigado! Sua confirmação foi registrada.');
+                    toast('Confirmação registrada.');
                   },
             icon: const Icon(Icons.check),
             label: Text(alreadyConfirmed
@@ -225,7 +225,7 @@ class _IssueDetails extends StatelessWidget {
                     ? null
                     : () async {
                         await repo.flag(i.id);
-                        toast('Obrigado, vamos revisar este registro.');
+                        toast('Registro enviado para revisão.');
                       },
                 icon: const Icon(Icons.flag_outlined),
                 label: Text(i.flagged ? 'Reportado' : 'Informação incorreta'),

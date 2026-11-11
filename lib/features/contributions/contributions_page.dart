@@ -24,7 +24,7 @@ class ContributionsPage extends StatelessWidget {
           length: 2,
           child: Scaffold(
             appBar: AppBar(
-              title: const Text('Minhas contribuições'),
+              title: const Text('Histórico de contribuições'),
               bottom: TabBar(tabs: [
                 Tab(text: 'Registrados (${mine.length})'),
                 Tab(text: 'Confirmados (${confirmed.length})'),
@@ -70,7 +70,7 @@ class ContributionsPage extends StatelessWidget {
                     style: Theme.of(context)
                         .textTheme
                         .headlineSmall
-                        ?.copyWith(fontWeight: FontWeight.bold)),
+                        ?.copyWith(fontWeight: FontWeight.w600)),
                 Text(label, style: Theme.of(context).textTheme.bodySmall),
               ],
             ),

@@ -71,7 +71,7 @@ class _NotificationsPageState extends State<NotificationsPage> {
         padding: const EdgeInsets.all(16),
         children: [
           const Text('Reportar problema',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
           const SizedBox(height: 12),
           ..._presets.map((p) => Padding(
                 padding: const EdgeInsets.only(bottom: 8),
@@ -91,7 +91,7 @@ class _NotificationsPageState extends State<NotificationsPage> {
           if (_history.isNotEmpty) ...[
             const SizedBox(height: 24),
             const Text('Histórico',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
             const SizedBox(height: 8),
             ..._history.map((h) => ListTile(
                   leading: Icon(h.icon, color: h.color),

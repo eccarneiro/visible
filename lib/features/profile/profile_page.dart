@@ -48,11 +48,11 @@ class ProfilePage extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 leading: CircleAvatar(
                     radius: 26,
-                    backgroundColor: cs.primaryContainer,
-                    child: Icon(app.profile.icon, color: cs.onPrimaryContainer)),
+                    backgroundColor: cs.primary.withValues(alpha: .08),
+                    child: Icon(app.profile.icon, color: cs.primary)),
                 title: Text(
                     app.displayName.isEmpty ? 'Visitante' : app.displayName),
-                subtitle: const Text('Conta e login chegam em breve'),
+                subtitle: const Text('Uso sem cadastro. Dados de perfil ficam no aparelho.'),
                 trailing: const Icon(Icons.edit_outlined),
                 onTap: () => _editName(context, app),
               ),

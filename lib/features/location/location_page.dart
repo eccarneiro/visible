@@ -176,7 +176,7 @@ class _InfoRow extends StatelessWidget {
           Icon(icon, size: 20, color: Colors.green),
           const SizedBox(width: 12),
           Text('$label: ',
-              style: const TextStyle(fontWeight: FontWeight.bold)),
+              style: const TextStyle(fontWeight: FontWeight.w600)),
           Expanded(
             child: SelectableText(value,
                 style: const TextStyle(fontFamily: 'monospace')),
